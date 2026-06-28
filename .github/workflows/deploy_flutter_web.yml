@@ -36,6 +36,9 @@ jobs:
       - name: Build Flutter web
         run: flutter build web --release --base-href "/AppSprint-Studio.github.io/"
 
+      - name: Verify generated base href
+        run: grep '<base href' build/web/index.html
+
       - name: Add nojekyll file
         run: touch build/web/.nojekyll
 
