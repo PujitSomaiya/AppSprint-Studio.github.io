@@ -1,0 +1,170 @@
+name: appsprint_studio
+description: Official website for AppSprint Studio - Apps, Shopify and DevOps solutions.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Navigation
+  go_router: ^17.1.0
+
+  # Networking
+  internet_connection_checker_plus: ^2.9.1+2
+
+  # State Management
+  fpdart: ^1.2.0
+  equatable: ^2.0.7
+  flutter_hooks: ^0.21.3+1
+  flutter_bloc: ^9.1.1
+
+  # Backend – Firebase
+
+  # Backend – Supabase
+
+  # Backend – Appwrite
+
+  # Storage
+  shared_preferences: ^2.5.4
+  flutter_secure_storage: ^10.0.0
+
+  # Images & SVG
+  cached_network_image: ^3.4.1
+  flutter_svg: ^2.2.4
+
+  # Icons
+
+  # Shimmer / Skeleton
+  skeletonizer: ^2.1.3
+
+  # Responsive UI
+  flutter_screenutil: ^5.9.3
+
+  # Animations
+  flutter_animate: ^4.5.2
+  smooth_page_indicator: ^2.0.1
+
+  # Environment
+  flutter_dotenv: ^6.0.0
+
+  # Logging
+  logger: ^2.6.2
+
+  # Media
+
+  # Utilities
+  path_provider: ^2.1.4
+  url_launcher: ^6.3.1
+  permission_handler: ^12.0.1
+
+  # Device & System
+  device_info_plus: ^11.2.0
+
+
+  # Localization
+  easy_localization: ^3.0.8
+
+  flutter_native_splash: ^2.4.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  # Code Generation
+
+dependency_overrides:
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+    - assets/icons/
+    - assets/translations/
+    - assets/fonts/
+    - .env
+
+  fonts:
+    - family: InterVariable
+      fonts:
+        - asset: assets/fonts/InterVariable-Italic.ttf
+        - asset: assets/fonts/InterVariable.ttf
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Black.ttf
+        - asset: assets/fonts/Inter-Bold.ttf
+        - asset: assets/fonts/Inter-ExtraBold.ttf
+        - asset: assets/fonts/Inter-ExtraLight.ttf
+        - asset: assets/fonts/Inter-Italic.ttf
+        - asset: assets/fonts/Inter-Light.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-SemiBold.ttf
+        - asset: assets/fonts/Inter-Thin.ttf
+    - family: Inter BlackItalic
+      fonts:
+        - asset: assets/fonts/Inter-BlackItalic.ttf
+    - family: Inter BoldItalic
+      fonts:
+        - asset: assets/fonts/Inter-BoldItalic.ttf
+    - family: Inter ExtraBoldItalic
+      fonts:
+        - asset: assets/fonts/Inter-ExtraBoldItalic.ttf
+    - family: Inter ExtraLightItalic
+      fonts:
+        - asset: assets/fonts/Inter-ExtraLightItalic.ttf
+    - family: Inter LightItalic
+      fonts:
+        - asset: assets/fonts/Inter-LightItalic.ttf
+    - family: Inter MediumItalic
+      fonts:
+        - asset: assets/fonts/Inter-MediumItalic.ttf
+    - family: Inter SemiBoldItalic
+      fonts:
+        - asset: assets/fonts/Inter-SemiBoldItalic.ttf
+    - family: Inter ThinItalic
+      fonts:
+        - asset: assets/fonts/Inter-ThinItalic.ttf
+    - family: InterDisplay
+      fonts:
+        - asset: assets/fonts/InterDisplay-Black.ttf
+        - asset: assets/fonts/InterDisplay-Bold.ttf
+        - asset: assets/fonts/InterDisplay-ExtraBold.ttf
+        - asset: assets/fonts/InterDisplay-ExtraLight.ttf
+        - asset: assets/fonts/InterDisplay-Italic.ttf
+        - asset: assets/fonts/InterDisplay-Light.ttf
+        - asset: assets/fonts/InterDisplay-Medium.ttf
+        - asset: assets/fonts/InterDisplay-Regular.ttf
+        - asset: assets/fonts/InterDisplay-SemiBold.ttf
+        - asset: assets/fonts/InterDisplay-Thin.ttf
+    - family: InterDisplay BlackItalic
+      fonts:
+        - asset: assets/fonts/InterDisplay-BlackItalic.ttf
+    - family: InterDisplay BoldItalic
+      fonts:
+        - asset: assets/fonts/InterDisplay-BoldItalic.ttf
+    - family: InterDisplay ExtraBoldItalic
+      fonts:
+        - asset: assets/fonts/InterDisplay-ExtraBoldItalic.ttf
+    - family: InterDisplay ExtraLightItalic
+      fonts:
+        - asset: assets/fonts/InterDisplay-ExtraLightItalic.ttf
+    - family: InterDisplay LightItalic
+      fonts:
+        - asset: assets/fonts/InterDisplay-LightItalic.ttf
+    - family: InterDisplay MediumItalic
+      fonts:
+        - asset: assets/fonts/InterDisplay-MediumItalic.ttf
+    - family: InterDisplay SemiBoldItalic
+      fonts:
+        - asset: assets/fonts/InterDisplay-SemiBoldItalic.ttf
+    - family: InterDisplay ThinItalic
+      fonts:
+        - asset: assets/fonts/InterDisplay-ThinItalic.ttf
