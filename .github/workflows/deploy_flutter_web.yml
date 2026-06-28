@@ -39,6 +39,12 @@ jobs:
       - name: Verify generated base href
         run: grep '<base href' build/web/index.html
 
+      - name: Verify env asset exists
+        run: |
+          echo "Checking .env file..."
+          find build/web -name ".env" -print
+          test -f build/web/assets/assets/.env || test -f build/web/assets/.env
+
       - name: Add nojekyll file
         run: touch build/web/.nojekyll
 
@@ -49,6 +55,7 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: build/web
+          include-hidden-files: true
 
   deploy:
     name: Deploy to GitHub Pages
