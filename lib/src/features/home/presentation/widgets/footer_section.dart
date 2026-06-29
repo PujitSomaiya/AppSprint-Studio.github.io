@@ -69,10 +69,11 @@ class FooterSection extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: colorScheme.primaryContainer,
               ),
-              child: Icon(
-                Icons.bolt_rounded,
-                color: colorScheme.onPrimaryContainer,
-                size: 20,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(16),
+                child: Image.asset(
+                  AppAssets.logo,
+                ),
               ),
             ),
             const SizedBox(width: AppSpacing.sm),
@@ -87,7 +88,7 @@ class FooterSection extends StatelessWidget {
         ),
         const SizedBox(height: AppSpacing.md),
         Text(
-          'home.footer_copyright'.tr(),
+          'home.footer_copyright'.tr(namedArgs: {'year': '${DateTime.now().year}'}),
           textAlign: MediaQuery.of(context).size.width > 768 ? TextAlign.left : TextAlign.center,
           style: context.textTheme.bodySmall?.copyWith(
             color: colorScheme.onSurfaceVariant,
